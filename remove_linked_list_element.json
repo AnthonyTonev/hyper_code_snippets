@@ -1,0 +1,5 @@
+{
+        "title": "remove_linked_list_element",
+        "description": "",
+        "code":"// loop solution\nconst removeElements = (head, targetVal) => {\n  while (head && head.val === targetVal) {\n    head = head.next;\n  }\n\n  let currentNode = head;\n\n  while (currentNode && currentNode.next) {\n    if (currentNode.next.val === targetVal) {\n      currentNode.next = currentNode.next.next;\n    } else {\n      currentNode = currentNode.next;\n    }\n  }\n\n  return head;\n};\n\n// recursion solution\nconst removeElements = (head, targetVal) => {\n  if (head === null) {\n    return head;\n  } else {\n    head.next = removeElements(head.next, targetVal);\n\n    if (head.val === targetVal) {\n      return head.next;\n    } else {\n      return head;\n    }\n  }\n};"
+}
