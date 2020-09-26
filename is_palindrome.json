@@ -1,0 +1,5 @@
+{
+        "title": "is_palindrome",
+        "description": "",
+        "code":"const isPalindrome = (head) => {\n  let fast = head;\n  let slow = head;\n\n  while (fast !== null && fast.next !== null) {\n    fast = fast.next.next;\n    slow = slow.next;\n  }\n\n  let firstHalf = head;\n  let secondHalf = reverseList(slow);\n\n  while (secondHalf !== null) {\n    if (firstHalf.val !== secondHalf.val) {\n      return false;\n    }\n\n    firstHalf = firstHalf.next;\n    secondHalf = secondHalf.next;\n  }\n\n  return true;\n};\n\nconst reverseList = (head) => {\n  let reversedList = null;\n\n  while (head !== null) {\n    const tempList = head.next;\n    head.next = reversedList;\n    reversedList = head;\n    head = tempList;\n  }\n\n  return reversedList;\n};"
+}
