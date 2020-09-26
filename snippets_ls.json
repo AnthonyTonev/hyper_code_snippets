@@ -1,5 +1,0 @@
-{
-        "title": "snippets_ls",
-        "description": "a full list of all the snippets",
-        "code":"\n/*\nfull list of snippets from https://raw.githubusercontent.com/AnthonyTonev/hyper_code_snippets/master/\n\nbinary_search - simple binary search implementaiton\ngrouping_dishes  - interview problem\nis_palindrome  - interview problem\nremove_linked_list_element  - interview problem\nrotate_image  - interview problem\nsnippets_ls  - interview problem\nvalid_path_in_grid  - interview problem\n\n\n*/\n"
-}
