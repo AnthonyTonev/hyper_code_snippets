@@ -1,5 +1,0 @@
-{
-        "title": "rotate_image",
-        "description": "",
-        "code":"//try hard solution\nvar rotate = function(matrix) {\n  const len = matrix.length;\n  for(let i = 0; i <len;i+=1){\n      for(let j = i; j <len;j+=1){\n    const row = matrix[i][j];\n     const col = matrix[j][i];\n     matrix[i][j] = col;\n     matrix[j][i] = row;\n      }\n    for(let x = 0; x < len/2; x+=1){\n    const start = matrix[i][x];\n    const end =  matrix[i][len-x-1]; \n         matrix[i][x] = end;\n         matrix[i][len-x-1] = start;\n     }\n  }\n\n  return matrix;\n};\n\n//lazy solution\nvar rotate = function(matrix) {\n  for(let i = 0; i <matrix.length;i++){\n      for(let j = i; j <matrix.length;j++){\n    [matrix[i][j],matrix[j][i]] = [matrix[j][i],matrix[i][j]]   \n      }\n    matrix[i].reverse();\n  }\n  return matrix;\n};"
-}
