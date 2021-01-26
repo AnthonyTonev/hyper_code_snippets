@@ -18,5 +18,6 @@
           }
        
         ],
+	"files":[],
         "code":"\nconst UI = {\n    parent: document.body,\n    setParent:  function (handler){\n    this.parent = handler;},\n    create:  function (type = '', parent, params) {\n    let parentEl;\n    if(parent instanceof HTMLElement){parentEl = parent;}\n    else{parentEl = this.parent;params = parent;}\n    switch (type) {\n      default:{\n        const element = document.createElement(type);\n        parentEl?.appendChild(element);\n          if(params){\n            for (const i in params) {\n              if(i!='textContent' && i!='innerHTML'){\n                element.setAttribute(i,params[i]);\n              }else{element[i] = params[i];}}}\n        return element;}\n        break;}},css:(css)=>{\n             document.head.appendChild(document.createElement('style'));document.createElement('style').type = 'text/css';\n             if (document.createElement('style').styleSheet){document.createElement('style').styleSheet.cssText = css;} \n             else {document.createElement('style').appendChild(document.createTextNode(css));}}\n    }\n"
 }
