@@ -1,5 +1,6 @@
 {
         "title": "snippets",
         "description": "loads snippets from repo",
+        "files":[],
         "code":"/*\nhttps://raw.githubusercontent.com/AnthonyTonev/hyper_code_snippets/master/\n\n3D_in_2D\nbinary_search  \ncurve_editor_1  \ngrouping_dishes  \nperlocation  \nremove_linked_list_element  \nsnippets\narray_loop_num  \nboids          \ncurve_editor_2  \nh                \nrdmHexCol    \nrepulsion                   \ntemplate_test\nascii_donut     \ncontrol_gif    \ndom_builder     \nis_palindrome    \nrotate_image                \nvalid_path_in_grid\n\n*/"
 }
