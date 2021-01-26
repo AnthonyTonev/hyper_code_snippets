@@ -1,5 +1,6 @@
 {
         "title": "array_loop_num",
         "description": "",
+        "files":[],
         "code":"const arr = [];\nfor(let i =0; i<10;i++){\n   arr.push(i); \n}"
 }
