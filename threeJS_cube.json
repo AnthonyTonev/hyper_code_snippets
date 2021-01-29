@@ -1,0 +1,6 @@
+{
+        "title": "threeJS_cube",
+        "description": "example of three js",
+        "files":["index.html","js/main.js"],
+        "code":"{\"0\":\"<!DOCTYPE html>\\n<html>\\n\\t<head>\\n\\t\\t<meta charset=\\\"utf-8\\\">\\n\\t\\t<title>My first three.js app</title>\\n\\t\\t<style>\\n\\t\\t\\tbody { margin: 0; }\\n\\t\\t</style>\\n\\t</head>\\n\\t<body>\\n          <script src=\\\"https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js\\\"></script>\\n\\t\\t<script src=\\\"js/main.js\\\"></script>\\n\\t</body>\\n</html>\\n\",\"1\":\"const scene = new THREE.Scene();\\nconst camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );\\n\\nconst renderer = new THREE.WebGLRenderer();\\nrenderer.setSize( window.innerWidth, window.innerHeight );\\ndocument.body.appendChild( renderer.domElement );\\nconst mesh = new THREE.Mesh( new THREE.BoxGeometry( 5, 5, 5 ), new THREE.MeshNormalMaterial() );\\nconst cube = new THREE.EdgesHelper( mesh, 0x99b2ff);\\nscene.add( cube );\\n\\ncamera.position.z = 25;\\n\\nfunction animate() {\\nrequestAnimationFrame( animate );\\nrenderer.render( scene, camera );\\ncube.rotation.x += 0.01;\\ncube.rotation.y += 0.01;\\n}\\nanimate();\"}"
+}
