@@ -2,5 +2,5 @@
         "title": "snippets",
         "description": "load snippets from repo",
         "files":[],
-        "code":"\n/*\nhttps://raw.githubusercontent.com/AnthonyTonev/hyper_code_snippets/master/\n\n3D_in_2D\nbinary_search   \nperlocation  \nremove_linked_list_element  \nsnippets\narray_loop_num  \nboids          \ncurve_editor_2  \nh                \nrdmHexCol    \nrepulsion                   \ntemplate_test\nascii_donut     \ncontrol_gif    \ndom_builder     \n\n*/\n"
+        "code":"\n/*\nhttps://raw.githubusercontent.com/AnthonyTonev/hyper_code_snippets/master/\n\n3D_in_2D\nbinary_search   \nperlocation  \nremove_linked_list_element  \nsnippets\narray_loop_num  \nboids          \ncurve_editor  \nh                \nrdmHexCol    \nrepulsion                   \ntemplate_test\nascii_donut     \nthreeJS_cube    \ndom_builder     \n\n*/\n"
 }
