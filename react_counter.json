@@ -1,0 +1,6 @@
+{
+        "title": "react_counter",
+        "description": "simple react example",
+        "files":["react.js","index.html"],
+        "code":"{\"0\":\"const { useState } = React;\\n\\nfunction Example() {\\n  // Declare a new state variable, which we'll call \\\"count\\\"\\n  const [count, setCount] = useState(0);\\n  return (\\n    <div>\\n      <p>You clicked {count} times</p>\\n      <button onClick={() => setCount(count + 1)}>\\n        Click me\\n      </button>\\n    </div>\\n  );\\n}\\n\\nReactDOM.render(\\n  <React.StrictMode>\\n    <Example />\\n  </React.StrictMode>,\\n  document.getElementById('root'),\\n);\\n\\n\",\"1\":\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Document</title>\\n</head>\\n<body>\\n<script src=\\\"https://unpkg.com/@babel/standalone/babel.min.js\\\"></script>  \\n<script crossorigin src=\\\"https://unpkg.com/react@17/umd/react.production.min.js\\\"></script>\\n<script crossorigin src=\\\"https://unpkg.com/react-dom@17/umd/react-dom.production.min.js\\\"></script>\\n <script type=\\\"text/babel\\\" data-type=\\\"module\\\" src=\\\"./react.js\\\"></script>\\n  <div id=\\\"root\\\"></div>\\n</body>\\n\\n</html>\"}"
+}
