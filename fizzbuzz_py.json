@@ -1,6 +1,0 @@
-{
-        "title": "fizzbuzz_py",
-        "description": "a simple python example",
-        "files":["fizzbuzz.py"],
-        "code":"{\"0\":\"\\nfor fizzbuzz in range(51):\\n    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:\\n        print(\\\"fizzbuzz\\\")\\n        continue\\n    elif fizzbuzz % 3 == 0:\\n        print(\\\"fizz\\\")\\n        continue\\n    elif fizzbuzz % 5 == 0:\\n        print(\\\"buzz\\\")\\n        continue\\n    print(fizzbuzz)\\n\"}"
-}
