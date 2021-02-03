@@ -1,0 +1,6 @@
+{
+        "title": "isSameTree",
+        "description": "https://leetcode.com/problems/same-tree/submissions/",
+        "files":[],
+        "code":"/**\n * Definition for a binary tree node.\n * function TreeNode(val, left, right) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.left = (left===undefined ? null : left)\n *     this.right = (right===undefined ? null : right)\n * }\n */\n/**\n * @param {TreeNode} p\n * @param {TreeNode} q\n * @return {boolean}\n */\nconst tree1 = {\n\tval:1,\n     left:{\n       val:2,\n       left:null,\n       right:null  \n     },\n     right:{\n       val:3,\n       left:null,\n       right:null  \n     }\n}\nconst tree2 = {\n\tval:1,\n     left:{\n       val:2,\n       left:null,\n       right:null  \n     },\n     right:{\n       val:3,\n       left:null,\n       right:null  \n     }\n}\nconst isSameTree = (p, q) => {\n  if(p && q){\n  if(p.val !== q.val) return false; \t\t\n  return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);\n  }else if(p && !q || q && !p){\n  return false;\n  }else return true; \n};\n\nisSameTree(tree1,tree2)"
+}
